@@ -1,0 +1,82 @@
+{
+    "fables": [
+        "Describe an inspiring person you know.",
+        "Who is your role model and why?"
+    ],
+    "events": [
+        "What was the most memorable event you attended?",
+        "Describe a festival unique to your culture."
+    ],
+    "music": [
+        "What type of music do you enjoy the most?",
+        "Describe a song that moves you deeply."
+    ],
+    "places": [
+        "What is your favorite place to visit?",
+        "Describe a place in your town that has historical significance."
+    ],
+    "food": [
+        "What is your favorite dish? - మీకు ఇష్టమైన వంటకం ఏమిటి?",
+        "Do you prefer spicy or sweet? - మీరు కారంగా ఇష్టపడతారా లేదా తీపిగా?"
+    ],
+    "literature": [
+        "Who is your favorite author or poet?",
+        "What book changed your perspective?"
+    ],
+    "architecture": [
+        "Describe an architectural landmark you like.",
+        "What building style is common in your area?"
+    ],
+    "skills": [
+        "What skill are you proud of?",
+        "What new skill would you like to learn?"
+    ],
+    "images": [
+        "Describe a picture that you cherish.",
+        "What kind of images inspire you?"
+    ],
+    "culture": [
+        "What festival do you celebrate most? - మీరు ఎక్కువగా జరుపుకునే పండుగ ఏమిటి?",
+        "Do you follow any traditions at home? - మీ ఇంట్లో ఏవైనా సంప్రదాయాలు పాటిస్తారా?"
+    ],
+    "flora_&_fauna": [
+        "What plants or animals are common around your home?",
+        "Do you have a favorite tree, flower, or animal?"
+    ],
+    "education": [
+        "What is your favorite subject in school?",
+        "Describe an inspiring teacher."
+    ],
+    "vegetation": [
+        "What plants grow around your home?",
+        "Do you have a favorite tree or flower?"
+    ],
+    "folk_tales": [
+        "Share a folk tale from your region.",
+        "What lessons do folk tales teach us?"
+    ],
+    "folk_songs": [
+        "Share a folk song from your culture.",
+        "Do you know the meaning of any folk songs?"
+    ],
+    "traditional_skills": [
+        "What traditional skill do you know?",
+        "Describe a traditional craft or art from your region."
+    ],
+    "local_cultural_history": [
+        "Describe a local cultural festival.",
+        "What traditions are unique to your community?"
+    ],
+    "local_history": [
+        "What is an interesting fact about your town’s history?",
+        "Describe a historical event that shaped your community."
+    ],
+    "food_agriculture": [
+        "Describe a traditional farming practice.",
+        "What local foods are special in your area?"
+    ],
+    "newspapers_older_than_1980s": [
+        "Have you seen old newspapers? What stood out?",
+        "How did newspapers influence people in older times?"
+    ]
+}
