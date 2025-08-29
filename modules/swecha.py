@@ -10,6 +10,29 @@ def _auth_headers():
     token = st.session_state.get("auth_token")
     return {"Authorization": f"Bearer {token}"} if token else {}
 
+
+def _nice_error(resp):
+    """
+    Try to extract a human-readable error from a requests.Response object.
+    """
+    try:
+        # If the response is JSON and has a message or error field
+        data = resp.json()
+        if "error" in data:
+            return data["error"]
+        if "message" in data:
+            return data["message"]
+    except Exception:
+        pass  # Not JSON or parsing failed
+    
+    # Fall back to plain text if available
+    if resp.text:
+        return resp.text.strip()
+    
+    # As a last resort, return the HTTP status code
+    return f"HTTP {resp.status_code} {resp.reason}"
+
+
 def login(phone, password):
     payload = {"phone": phone, "password": password}
     return requests.post(f"{API_BASE}/auth/login", json=payload, timeout=REQ_TIMEOUT)

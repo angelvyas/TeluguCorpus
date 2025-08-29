@@ -3,6 +3,31 @@ import requests
 from modules.swecha import login   
 from modules.register import run as signup_page
 
+
+
+
+def _nice_error(resp):
+    """
+    Try to extract a human-readable error from a requests.Response object.
+    """
+    try:
+        # If the response is JSON and has a message or error field
+        data = resp.json()
+        if "error" in data:
+            return data["error"]
+        if "message" in data:
+            return data["message"]
+    except Exception:
+        pass  # Not JSON or parsing failed
+    
+    # Fall back to plain text if available
+    if resp.text:
+        return resp.text.strip()
+    
+    # As a last resort, return the HTTP status code
+    return f"HTTP {resp.status_code} {resp.reason}"
+
+
 def run():
     style = """
     <style>
@@ -36,7 +61,7 @@ def run():
                     st.session_state.logged_in = True
                     st.session_state.auth_token = token
                     st.success("Login successful! 🎉")
-                    # st.rerun()
+                    st.rerun()
                 else:
                     st.error("Login failed: No token returned.")
             else:
